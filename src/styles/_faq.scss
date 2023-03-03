@@ -48,7 +48,22 @@
         .faq__questions__item__answer {
           padding-bottom: 24px ;
           height: auto;
-          transition: height, ease-out 0.5s;
+          transition: height, ease 0.5s;
+
+          .faq__answer__list {
+            padding-left: 40px;
+            margin-top: 16px;
+
+            &__item {
+              list-style: disc;
+              margin-top: 16px;
+              letter-spacing: .2px;
+            }
+          }
+
+          .faq__answer__text {
+            margin-top: 16px;
+          }
         }
       }
     }
