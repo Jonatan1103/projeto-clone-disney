@@ -20,6 +20,10 @@
         display: block;
         cursor: pointer;
 
+        @media (max-width:768px) {
+          font-size: 15px;
+        }
+
         &::after {
           content: '+';
           position: absolute;
@@ -45,6 +49,7 @@
             content: '-';
           }
         }
+        
         .faq__questions__item__answer {
           padding-bottom: 24px ;
           height: auto;
