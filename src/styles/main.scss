@@ -42,27 +42,51 @@ body {
 }
 
 .text--big {
-  @include text(18px)
+  @include text(18px);
+
+  @media (max-width:768px) {
+    @include text(15px);
+  }
 }
 
 .text {
-  @include text
+  @include text;
+
+  @media (max-width:768px) {
+    @include text(14px);
+  }
 }
 
 .text--small {
-  @include text(12px)
+  @include text(12px);
+
+  @media (max-width:768px) {
+    @include text(11px);
+  }
 }
 
 .titulo--big {
-  @include titulo(44px)
+  @include titulo(44px);
+
+  @media (max-width:768px) {
+    @include titulo(26px);
+  }
 }
 
 .titulo {
-  @include titulo
+  @include titulo;
+
+  @media (max-width:768px) {
+    @include titulo(24px);
+  }
 }
 
 .titulo--small {
-  @include titulo(28px)
+  @include titulo(28px);
+
+  @media (max-width:768px) {
+    @include titulo(22px);
+  }
 }
 
 .link-text {
@@ -121,6 +145,10 @@ body {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
 
+  @media (max-width:768px) {
+    display: block;
+  }
+
   img {
     max-width: 100%;
   }
@@ -151,6 +179,13 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      @media (max-width:768px) {
+        position: relative;
+        left: 0;
+        width: 100%;
+      }
+    
     }
   }
 }
